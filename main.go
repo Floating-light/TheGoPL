@@ -5,5 +5,6 @@ import (
 )
 
 func main() {
-	ch1.FetchExe1_9()
+	ch1.Server2()
+
 }
