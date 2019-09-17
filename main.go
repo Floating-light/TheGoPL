@@ -6,5 +6,4 @@ import (
 
 func main() {
 	ch1.Server2()
-
 }
