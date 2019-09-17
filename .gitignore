@@ -1,0 +1,4 @@
+#git remote add origin git@github.com:Floating-light/TheGoPL.git
+#git push -u origin master
+*.gif
+/falseInput
