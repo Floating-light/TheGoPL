@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/Floating-light/TheGoPL/ch1"
+	"github.com/Floating-light/TheGoPL/ch2"
 )
 
 func main() {
-	ch1.Server2()
+	ch2.CommandLineFlag()
 }
