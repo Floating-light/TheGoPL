@@ -1,9 +1,13 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/Floating-light/TheGoPL/ch2"
 )
 
 func main() {
-	ch2.NewFunc()
+	fmt.Println(ch2.BoilingC - ch2.FreezingC)
+	fmt.Println(ch2.CToF(ch2.BoilingC - ch2.FreezingC))
+	fmt.Println(ch2.CToF(ch2.Celsius(float64(float32(int(37))))))
 }
