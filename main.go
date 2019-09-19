@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	ch2.CommandLineFlag()
+	ch2.NewFunc()
 }
