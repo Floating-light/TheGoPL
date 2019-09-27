@@ -8,6 +8,7 @@ func f() {
 
 //var f int <f redeclared in this block
 //previous declaration at .\scope.go:5:6g>
+var true string = "true"
 
 func hideOuter() {
 	f := "hide outer function f() "

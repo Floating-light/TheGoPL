@@ -5,6 +5,8 @@ import (
 	"log"
 	"net/http"
 	"sync"
+
+	"github.com/Floating-light/TheGoPL/ch3"
 )
 
 var mu sync.Mutex
@@ -23,6 +25,13 @@ func Server2() {
 	http.HandleFunc("/sin", func(w http.ResponseWriter, r *http.Request) {
 		SinGif(w)
 	})
+
+	//draw computes surfaces and writes SVG data to client
+	http.HandleFunc("/canvas", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "image/svg+xml")
+		ch3.Draw3DSurface(w)
+	})
+
 	log.Fatal(http.ListenAndServe("localhost:8888", nil))
 }
 
