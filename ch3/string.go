@@ -63,6 +63,16 @@ func Comma(s string) string {
 
 //CommaNonRecursiveBuffer .
 func CommaNonRecursiveBuffer(s string) string {
+	var sign string = ""
+	var point string = ""
+	if s[0] == '-' || s[0] == '+' {
+		sign = s[:1]
+		s = s[1:]
+	}
+	if i := strings.Index(s, "."); i != -1 {
+		point = s[i:]
+		s = s[:i]
+	}
 	var buf bytes.Buffer
 	if r := len(s) % 3; r != 0 {
 		buf.WriteString(s[:r])
@@ -75,7 +85,5 @@ func CommaNonRecursiveBuffer(s string) string {
 		buf.WriteString(s[:3])
 		s = s[3:]
 	}
-
-	return buf.String()
-
+	return sign + buf.String() + point
 }
