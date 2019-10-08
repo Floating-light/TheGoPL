@@ -53,3 +53,14 @@ func Nonempty(strings []string) []string {
 	}
 	return strings[:i]
 }
+
+//Nonempty2 using append
+func Nonempty2(strings []string) []string {
+	out := strings[:0]
+	for _, s := range strings {
+		if s != "" {
+			out = append(out, s)
+		}
+	}
+	return out
+}
