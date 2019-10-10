@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Floating-light/TheGoPL/ch4"
+	"github.com/Floating-light/TheGoPL/ch1"
 )
 
 func longestCommonPrefix(strs []string) string {
@@ -54,5 +54,6 @@ func main() {
 	for {
 
 	} */
-	ch4.FalseMain()
+	//ch4.FalseMain()
+	ch1.Fetch()
 }
