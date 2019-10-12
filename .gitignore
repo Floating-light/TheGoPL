@@ -3,3 +3,5 @@
 *.gif
 /falseInput
 *.xml
+*.exe
+*.html
